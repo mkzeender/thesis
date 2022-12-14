@@ -1,2 +1,13 @@
 out*.pgf
 out*.png
+
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.pdf
+*.gz
+*.toc
