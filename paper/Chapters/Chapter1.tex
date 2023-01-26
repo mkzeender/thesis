@@ -1,7 +1,14 @@
 
 Understanding the composition and structure of galaxies and the role that dark matter plays in their organization is one of the most pressing topics in modern intergalactic physics. A common method to explore these questions is using simulations. A simulation allows us to choose plausible initial conditions and plausible laws of physics and test how the universe would behave under those conditions. We can then compare those results to experimental data to examine the accuracy of those initial assumptions. For instance, if we wanted to test Newton's theory of gravity in our solar system, we could run a numerical simulation of Newton's equation, starting from a past known position of the planets, and test whether or not the simulated motion of the planets aligns with our real astronomical observations. Likewise, we can test our theories about dark matter and gravity by running galaxy simulations.
 
-It is a common myth that if we can simulate the something, we must be able to fully understand it. Unfortunately, this is not generally true. The galaxy simulations we use are so complex and detailed that it is often very difficult to determine exactly what causes certain behaviors. 
+Our current leading theory for dark matter's role in galaxy evolution is the Dark Energy and Cold Dark Matter ($\Lambda$CDM) model (\cite{salesBaryonicSolutionsChallenges2022}). This theory provides a framework for physical simulation that incorporates a non-interacting ("cold") model for dark matter and the cosmological constant ("$\Lambda$") model of dark energy. From here, physicists are free to incorporate models for baryonic processes---the physics of ordinary matter---such as gas pressure, temperature, and star formation.
+
+It is a common myth that if we can simulate the something, we must be able to fully understand it. Unfortunately, this is not generally true. The galaxy simulations we use are so complex and detailed that it is often very difficult to determine what physical assumptions or initial conditions cause certain behaviors. Instead, we must analyze the simulation data using similar techniques we use to analyze observational data (although it is much easier to collect data about a simulation than about a real system of galaxies). From there, we compare the results to our expected results from experimental data to test our theories.
+
+As one would expect, the simulation data does not always line up with the observational data; instead, there are a number of known tensions between the two. The two strongest tensions are the predicted diversity of rotation curves and the satellite plane distribution. The simulations predict that AAAAAAAAAAAAAAAAAAAAAAAA
+
+One such tension is the diversity of baryonic distribution amongst dwarf galaxies.
+
 
 \section{FIREbox Galaxy Simulation}
 The FIREbox (\cite{feldmannFIREboxSimulatingGalaxies2022}) simulation is the most in-depth galaxy simulation ever performed as of the date of this thesis. It does not have the largest volume, nor is it the most detailed; sub-simulations such as FIRE in the Field (\cite{fittsFireFieldSimulating2017}) zoom in closer, to a particle size as low as 500 solar masses. FIREbox, however, has the total combined resolution and incorporates a balance of detail and scale.
@@ -23,9 +30,7 @@ This second section is, obviously, 1.2.
 Subsubsections are still smaller sections.  By default, this is the finest subdivision of a chapter in \LaTeX, and they will \emph{not} appear in the table of contents.  
 
 \subsection{A useful command}
-
-\marginpar{This is a margin note.}
-One command I often ask my students to use is \texttt{\textbackslash marginpar}, which can be used to create a margin note.  These are super helfpul if there's something to which you need to return later (say, after you've looked up a number), as notes in the margin are really easy to find quickly.  
+...
 
 \section{Some figures}
 
@@ -47,8 +52,6 @@ You will surely want to add figures to your thesis to help explain your ideas.  
 \end{figure}
 
 
-
-Here, back in the main body of the text, we can create a reference to figure \ref{fig:aFigure}.  This is automatic; the actual numbers are not typed into the code, but rather the \texttt{\textbackslash ref} tag has been used.  Always always always use the \texttt{\textbackslash ref} command to reference figures, or invariably at some point you'll move something and all of your references will be incorrect and you'll have to fix them manually.
 
 % Here is the same figure, but now using the wrapfigure environment.  This allows you to wrap your text around the figure itself.  The optional [] argument specifies how many lines of text should be wrapped.  The first {} argument specifies where on the page the figure should live (here the right side is specified).  The second {} argument defines how much real estate on the page will be allocated for the figure block; here it is 45% of the page width.
 \begin{wrapfigure}[11]{r}{0.45\textwidth}
