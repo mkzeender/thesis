@@ -8,6 +8,5 @@ out*.png
 *.fls
 *.lof
 *.log
-*.pdf
 *.gz
 *.toc
