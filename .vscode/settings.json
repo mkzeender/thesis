@@ -2,5 +2,6 @@
     "python.analysis.typeCheckingMode": "off",
     "files.exclude": {
         "**/*.log": true
-    }
+    },
+    "workbench.colorTheme": "Quiet Light"
 }
