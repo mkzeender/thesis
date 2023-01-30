@@ -3,5 +3,6 @@
     "files.exclude": {
         "**/*.log": true
     },
-    "workbench.colorTheme": "Quiet Light"
+    "workbench.colorTheme": "Quiet Light",
+    "editor.wordWrap": "on"
 }
