@@ -4,5 +4,8 @@
         "**/*.log": true
     },
     "workbench.colorTheme": "Quiet Light",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "cSpell.words": [
+        "Bimetric"
+    ]
 }
