@@ -1,17 +1,33 @@
 
 Understanding the composition and structure of galaxies and the role that dark matter plays in their organization is one of the most pressing topics in modern intergalactic physics. A common method to explore these questions is using simulations. A simulation allows us to choose plausible initial conditions and plausible laws of physics and test how the universe would behave under those conditions. We can then compare those results to experimental data to examine the accuracy of those initial assumptions. For instance, if we wanted to test Newton's theory of gravity in our solar system, we could run a numerical simulation of Newton's equation, starting from a past known position of the planets, and test whether or not the simulated motion of the planets aligns with our real astronomical observations. Likewise, we can test our theories about dark matter and gravity by running galaxy simulations.
 
+\section{Physical Models}
 
 Our current leading theory for dark matter's role in galaxy evolution is the Dark Energy and Cold Dark Matter (\lcdm) model (\cite{salesBaryonicSolutionsChallenges2022}). This theory provides a framework for physical simulation that incorporates a non-interacting ("cold") model for dark matter and the cosmological constant model of dark energy. Dark matter is assumed to not interact with either itself or "normal" baryonic matter, except through gravity. Such a model leads to large dark matter halos around galaxies that do not collapse into disks, which is consistent with observational data (\cite{feldmannFIREboxSimulatingGalaxies2022}). Since not much else is known about dark matter, and we have yet to find a non-gravitational interaction between dark matter and baryonic matter, this assumption is widely accepted in practice. Likewise, \cite{feldmannFIREboxSimulatingGalaxies2022} assumes dark energy to be the cosmological constant $\Lambda$, which is a degree of freedom in in the Einstein Equation that adds a net offset to the energy density of a vacuum. While the cosmological constant model of dark energy is quite popular and consistent in most ways with observational data, it is not the only model of dark energy. \cite{bassiCosmologicalEvolutionBimetric2023} pose an alternative: the Bimetric gravity model. This theory hypothesizes that the graviton---the theoretical particle that causes gravitational interactions---has mass. \cite{bassiCosmologicalEvolutionBimetric2023} show that a graviton with a non-zero mass could cause a net pressure in the vacuum, negating the need for the cosmological constant. They argue that the Bimetric theory of gravity could also resolve the Hubble Tension. This is an inconsistency between the measurement of the Hubble Constant at large and small scales (\cite{senCosmologicalObservationsAllow2022}), a calculation that relies on the cosmological constant being just that: a constant. If more evidence can be found in support of it, the Bimetric model may replace the \lcdm\space model, but for now the latter is still the most widely used.
 
-When creating a galaxy simulation, physicists must also incorporate baryonic processes, the physics of ordinary matter. Baryonic properties incorporated into galaxy simulations may include gas density, pressure, temperature, star formation rate,
+%TODO: cite Baryonic solutions about tension in lcdm
 
-% TODO: talk about the history of baryonic processes. Compare and contrast
+When creating a galaxy simulation, physicists must also incorporate baryonic processes, the physics of ordinary matter. Baryonic properties incorporated into galaxy simulations may include gas density, pressure, temperature, star formation rate. Our current computers limit us such that we cannot simulate the behaviors of individual stars within a galaxy (\cite{feldmannFIREboxSimulatingGalaxies2022}) because there are simply too many. Past simulations such as \cite{bournaudISMPropertiesHydrodynamic2010} were forced to ignore stellar processes in favor of gaseous ones. They found that the simulated galaxies grew too massive and cooled too quickly compared to real galaxies. This tension was resolved by the creation of the Feedback in Realistic Environments (FIRE) physics model (\cite{hopkinsFIRE2SimulationsPhysics2018}). FIRE estimates the rate at which stars are forming within each gas particle without actually simulating their creation. It assumes an average amount of wind and thermal energy a star will produce. It then uses the estimated number of stars in each particle to simulate stellar feedback.
 
-It is a common myth that if we can simulate something, we must be able to fully understand it. Unfortunately, this is not generally true. The galaxy simulations we use are so complex and detailed that it is often very difficult to determine what physical assumptions or initial conditions cause certain behaviors. Instead, we must analyze the simulation data using similar techniques we use to analyze observational data (although it is much easier to collect data about a simulation than about a real system of galaxies). From there, we compare the results to our expected results from experimental data to test our theories.
+\section{Dwarf Galaxies and their Tensions}
+Until recently, dwarf galaxies have not been closely studied due to them being difficult to detect with telescopes. For a period of time, the \lcdm\* model was questioned because it predicted the existence of many more dwarf galaxies than had been observed in the region around the Milky Way (\cite{salesBaryonicSolutionsChallenges2022}). According to \cite{salesBaryonicSolutionsChallenges2022}, enough dwarf galaxies have been discovered in recent years to resolve this tension. Unfortunately, the sudden influx of dwarf galaxy observations has provided theorists with more questions than answers. 
 
-As one would expect, the simulation data does not always line up with the observational data; instead, there are a number of known tensions between the two. One such tension is the size-mass relation of dwarf galaxies. Observational data of dwarf galaxies near the Milky Way suggests that the correlation between the mass and size of satellite dwarf galaxies is not as strong as simulations seem to predict (\cite{salesBaryonicSolutionsChallenges2022}). 
+As one would expect, the simulation results that predicted these galaxies' existence do not always line up with the observations. There are a number of new tensions between the two. 
 
+
+The diversity of the size-mass relation of dwarf galaxies is one such tension. Observational data of dwarf galaxies near the Milky Way suggests that the correlation between the mass and size of satellite dwarf galaxies is not as strong as simulations seem to predict (\cite{salesBaryonicSolutionsChallenges2022}). 
+
+
+\section{Put this somewhere}
+It is a common myth that if we can simulate something, we must be able to fully understand it. Unfortunately, this is not generally true. The galaxy simulations we use are so complex and detailed that it is often very difficult to determine what physical assumptions or initial conditions cause certain behaviors. While it is much easier to make collect data from simulations---we do not need telescopes and we can view the galaxies in 3D with arbitrary resolution---we must still analyze that data using similar techniques used to study real galaxies.
+
+If it is demonstrated that one of these tensions is caused by neither numerical approximations in the simulations nor simplifications of baryonic physics, then it could call the \lcdm\* model into question.
+
+%TODO: better place for this section?
+
+
+
+\section{Size-Mass Ratio}
 
 \section{FIREbox Galaxy Simulation}
 The FIREbox (\cite{feldmannFIREboxSimulatingGalaxies2022}) simulation is the most in-depth galaxy simulation ever performed as of the date of this thesis. It does not have the largest volume, nor is it the most detailed; sub-simulations such as FIRE in the Field (\cite{fittsFireFieldSimulating2017}) zoom in closer, to a particle size as low as 500 solar masses. FIREbox, however, has the total combined resolution and incorporates a balance of detail and scale.
@@ -20,20 +36,7 @@ Scale and resolution are an important component of galaxy simulations. Previous 
 
 
 
-\section{Oh}
 
-\section{Another section}
-
-This second section is, obviously, 1.2.
-
-\subsection{A subsection}
-
-\subsubsection{A subsubsection}
-
-Subsubsections are still smaller sections.  By default, this is the finest subdivision of a chapter in \LaTeX, and they will \emph{not} appear in the table of contents.  
-
-\subsection{A useful command}
-...
 
 \section{Some figures}
 
