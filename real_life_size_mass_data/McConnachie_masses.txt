@@ -1,0 +1,105 @@
+(1)	(2)	(3)		(4)		(5)	(6)		(7)		(8)	(9)	(10)	
+Galaxy	M_sstarf	sigma*	delta sigma*	v*_r	delta v*r	M_H I	sigma^H I	delta sigma^H I	v^H I_r	delta v^H I_r	M_dyn(<or= r_h)	References^a	Comments	
+	(10^6 M_sun)	(km s^-1)		(km s^-1)		(10^6 M_sun)	(km s^-1)		(km s^-1)		(10^6 M_sun)			
+The Galaxy														
+Canis Major	49	20.0	3.0	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	(1)	H I measurements complex due to location!	
+Sagittarius dSph	21	11.4	0.7	N/A	N/A	N/A^b	N/A	N/A	N/A	N/A	190	(2) (3) (4) (5)		
+Segue (I)	0.00034	3.9^c	0.8	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.26	(6) (5)	Stellar velocity gradient constrained to <5 km s^-1 at 90% confidence	
+Ursa Major II	0.0041	6.7	1.4	N/A	N/A	N/A	N/A	N/A	N/A	N/A	3.9	(7) (5)	Velocity difference of 8.4 +or- 1.4 km s^-1 between stars in the east and west	
+Bootes II	0.0010	10.5	7.4	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	3.3	(8) (5)		
+Segue II	0.00086	3.4	^+2.5_-1.2	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	0.23	(9)		
+Willman 1	0.0010	4.3	^+2.3_-1.3	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	0.27	(10) (5)		
+Coma Berenices	0.0037	4.6	0.8	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.94	(7) (5)	Stellar velocity gradient of 5.5 +or- 1.2 km s^-1 deg^-1	
+Bootes III	0.017	14.0	3.2	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	(11)		
+LMC	1500	20.2	0.5	49.8	15.9	460	15.8	0.2	63.0	3.0		(12) (13) (14)	Stellar velocities based on carbon stars; H I boundaries between LMC, SMC, bridge, and interface regions not clearly defined	
+SMC	460	27.6	0.5	N/A	N/A	460	22.0^d	2.0	60.0	5.0		(15) (16) (14)	Stellar velocities based on red giant branch stars; stellar velocity gradient of 8.3 km s^-1 deg^-1; H I boundaries between LMC, SMC, bridge, and interface regions not clearly defined	
+Bootes (I)	0.029	2.4	^+0.9_-0.5	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	0.81	(17) (5)	Stellar velocity dispersion corresponds to dominant component, and there is evidence for a hotter component with sigma* ~ 9 km s^-1	
+Draco	0.29	9.1	1.2	N/A	N/A	N/A	N/A	N/A	N/A	N/A	11	(18) (19) (5)		
+Ursa Minor	0.29	9.5	1.2	N/A	N/A	N/A	N/A	N/A	N/A	N/A	9.5	(20) (19) (5)		
+Sculptor	2.3	9.2	1.4	N/A	N/A	0.22^e	N/A	N/A	N/A	N/A	14	(21) (22) (23) (5)	Stellar velocity gradient of 5.5 +or- 0.5 km s^-1 deg^-1	
+Sextans (I)	0.44	7.9	1.3	N/A	N/A	N/A	N/A	N/A	N/A	N/A	25	(21) (22) (5)		
+Ursa Major (I)	0.014	7.6	1.0	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	11	(7) (5)		
+Carina	0.38	6.6	1.2	N/A	N/A	N/A	N/A	N/A	N/A	N/A	6.3	(21) (22) (5)	Stellar velocity gradient of 2.5 +or- 0.8 km s^-1 deg^-1	
+Hercules	0.037	3.7	0.9	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	2.6	(24) (5)		
+Fornax	20	11.7	0.9	N/A	N/A	0.17^f	N/A	N/A	N/A	N/A	56	(21) (22) (25) (5)	Stellar velocity gradient of 6.3 +or- 0.2 km s^-1 deg^-1	
+Leo IV	0.019	3.3	1.7	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	1.3	(7) (5)		
+Canes Venatici II	0.0079	4.6	1.0	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	0.91	(7) (5)		
+Leo V	0.011	3.7	^+2.3_-1.4	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	1.1	(26) (27) (5)		
+Pisces II	0.0086	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Canes Venatici (I)	0.23	7.6	0.4	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	19	(7) (5)		
+Leo II	0.74	6.6	0.7	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	4.6	(18) (5)		
+Leo I	5.5	9.2	1.4	N/A	N/A	N/A	N/A	N/A	N/A	N/A	12	(28) (5)		
+Andromeda														
+M32	320	92.0	5.0	55.0	3.0	N/A	N/A	N/A	N/A	N/A	540	(29) (5)	Stellar velocity dispersion rises rapidly toward center and presents strong evidence for a supermassive black hole (e.g., see also van der Marel et al. 1997)	
+Andromeda IX	0.15	4.5	3.6	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	6.5	(30) (5)		
+NGC 205	330	35.0	5.0	11.0	5.0	0.40	16.1^g		N/A	N/A	420	(31) (32)	H I velocity gradient of ~42 km s^-1 measured over ~3 arcmin	
+Andromeda XVII	0.26	 ... 	 ... 	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	 ... 	(5)		
+Andromeda I	3.9	10.6	1.1	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	44	(33) (5)		
+Andromeda XXVII	0.12	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Andromeda III	0.83	4.7	1.8	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	6.1	(33) (34)^h; (5)		
+Andromeda XXV	0.68	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Andromeda XXVI	0.060	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Andromeda XI	0.049	<or=4.6		 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	1.9	(30) (5)		
+Andromeda V	0.39	11.5	^+5.3_-4.4	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	 ... 	(35) (34) (5)	Not associated with H I detection in Blitz & Robishaw (2000)	
+Andromeda X	0.096	3.9	1.2	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	2.3	(33) (5)		
+Andromeda XXIII	1.1	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Andromeda XX	0.029	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Andromeda XII	0.031	2.6	^+5.1_-2.6	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	1.2	(30) (5)		
+NGC 147	62	16.0	1.0	17.0	2.0	N/A	N/A	N/A	N/A	N/A	93	(36) (5)		
+Andromeda XXI	0.76	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Andromeda XIV	0.20	5.4	1.3	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	6.1	(33) (5)		
+Andromeda XV	0.49	11.0	^+7.0_-5.0	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	16	(37) (5)		
+Andromeda XIII	0.041	9.7	^+8.9_-4.5	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	11	(30) (5)	Stellar velocity dispersion based on three stars	
+Andromeda II	7.6	7.3	0.8	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	36	(33) (5)		
+NGC 185	68	24.0	1.0	15.0	5.0	0.11	15.3	0.8	N/A^i	N/A	150	(36) (32)		
+Andromeda XXIX	0.18	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Andromeda XIX	0.43	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Triangulum	2900													
+Andromeda XXIV	0.093	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Andromeda VII	9.5	9.7	1.6	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	42	(33) (5)		
+Andromeda XXII	0.034	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+IC 10	86	 ... 	 ... 	 ... 	 ... 	50	8.0	1.0	34.0	5.0	 ... 	(38) (39)	Gaseous disk embedded in complex, extended H I distribution, (with a dispersion of around 30-40 km s^-1)	
+LGS 3	0.96	7.9	^+5.3_-2.9	 ... 	 ... 	0.38	9.1	0.3	<or=5.0		17	(40) (41)	Stellar velocity dispersion based on four stars	
+Andromeda VI	2.8	9.4	^+3.2_-2.4	 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	 ... 	(35) (5)		
+Andromeda XVI	0.41	<or=10.0		 ... 	 ... 	N/A	N/A	N/A	N/A	N/A	7.9	(37) (5)		
+Andromeda XXVIII	0.21	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+IC 1613	100	 ... 	 ... 	 ... 	 ... 	65	25.0	3.0	5.9	1.0	 ... 	(42) (43)		
+Phoenix	0.77	 ... 	 ... 	 ... 	 ... 	0.12	10.0	4.0	N/A	N/A	 ... 	(44)	H I cloud offset from optical center of Phoenix, proposed as supernova-driven outflow; H I velocity gradient of ~10 km s^-1 observed over ~8 arcmin	
+NGC 6822	100	 ... 	 ... 	 ... 	 ... 	130	5.8	1.9	47.0	2.0	 ... 	(45) (46)	Demers et al. (2006) obtain velocities for >100 AGB stars.	
+Cetus	2.6	17.0^j	2.0	7.7	1.2	N/A	N/A	N/A	N/A	N/A	120	(47) (5)	Tentative stellar velocity gradient across minor axis of 7.7 +or- 1.2 km s^-1; unassociated with nearby H I cloud	
+Pegasus dIrr	6.61	 ... 	 ... 	 ... 	 ... 	5.9	<9.0		21.0:		 ... 	(48) (49)		
+Leo T	0.14	7.5	1.6	 ... 	 ... 	0.28	6.9	1.0	N/A	N/A	3.9	(7) (50)		
+WLM	43	17.5	2.0	20.8	2.0	61	4.5	1.0	30.0	3.0	380	(51) (52)		
+Leo A	6.0	9.3	1.3	N/A	N/A	11	9.3	1.4	N/A	N/A	25	(53) (54)	Stellar kinematics derived using 10 young B supergiants + H II regions; H I gradient of ~1.3 km s^-1 arcmin^-1	
+Andromeda XVIII	0.63	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 			
+Aquarius	1.6	 ... 	 ... 	 ... 	 ... 	4.1	5.8	0.1	N/A	N/A	 ... 	(48)	H I velocity gradient of 6 km s^-1 arcmin^-1.	
+Tucana	0.56	15.8	^+4.1_-3.1	N/A	N/A	N/A	N/A	N/A	N/A	N/A	41	(55) (5)	Stellar velocity gradient of ~16 km s^-1 over ~2 x r_h; unlikely associated with nearby H I cloud	
+Sagittarius dIrr	3.5	 ... 	 ... 	 ... 	 ... 	8.8	10.0	1.0	N/A	N/A	 ... 	(41)		
+UGC 4879	8.3	 ... 	 ... 	 ... 	 ... 	0.95	11.0	1.1	N/A	N/A	 ... 	(56)		
+NGC 3109	76	 ... 	 ... 	 ... 	 ... 	450	10.0:		72.4	0.5	 ... 	(57) (58) (59)		
+Sextans B	52	 ... 	 ... 	 ... 	 ... 	51	<18.0		71:			(60) (49)		
+Antlia	1.3	 ... 	 ... 	 ... 	 ... 	0.73	6.4	0.7	N/A	N/A	 ... 	(58)		
+Sextans A	44	 ... 	 ... 	 ... 	 ... 	77	8.0	1.0	20.0	2.0	 ... 	(61)		
+HIZSS 3(A)	 ... 	 ... 	 ... 	 ... 	 ... 	14	 ... 	 ... 	42.0	4.0	 ... 	(62)		
+HIZSS 3B	 ... 	 ... 	 ... 	 ... 	 ... 	2.6	 ... 	 ... 	N/A	N/A	 ... 	(62)	H I velocity gradient of ~2.5 km s^-1 arcmin^-1	
+KKR 25	1.4	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 	 ... 		See Huchtmeier et al. (2000) for attempted H I observations	
+ESO 410- G 005	3.5	 ... 	 ... 	 ... 	 ... 	0.73	14.2	0.6	 ... 	 ... 	 ... 	(63)		
+NGC 55	2200	 ... 	 ... 	 ... 	 ... 	1300	 ... 	 ... 	86.0	6.0	 ... 	(64)	Castro et al. (2008) obtain stellar velocities for ~200 massive blue stars and find that their kinematics closely trace the H I rotation curve	
+ESO 294- G 010	2.7	 ... 	 ... 	 ... 	 ... 	0.34	9.7	0.9	 ... 	 ... 	 ... 	(63)		
+NGC 300	2100	 ... 	 ... 	 ... 	 ... 	1800	13.0	5.0	98.8	3.1	 ... 	(65) (66)	H I velocity dispersion shows significant spatial variation	
+IC 5152	270	 ... 	 ... 	 ... 	 ... 	87	 ... 	 ... 	 ... 	 ... 	 ... 	(45)	H I line widths available in Koribalski et al. (2004)	
+KKH 98	4.5	 ... 	 ... 	 ... 	 ... 	6.6	 ... 	 ... 	 ... 	 ... 	 ... 	(67)	H I line widths available in Begum et al. (2008b) and Huchtmeier et al. (2003)	
+UKS 2323-326	17	 ... 	 ... 	 ... 	 ... 	17:	 ... 	 ... 	 ... 	 ... 	 ... 	(68)	See also Huchtmeier & Richter (1986); H I line widths available in Longmore et al. (1982) and Huchtmeier & Richter (1986)	
+KKR 3	0.54	 ... 	 ... 	 ... 	 ... 	2.5	7.5	0.5	N/A	N/A	 ... 	(69)	H I velocity gradient of ~3.3 km s^-1 arcmin^-1	
+GR 8	6.4	 ... 	 ... 	 ... 	 ... 	11	7.0	0.2	N/A	N/A	 ... 	(48)	Lumpy H I velocity distribution, with some evidence of an overall velocity gradient	
+UGC 9128	7.8	 ... 	 ... 	 ... 	 ... 	18	<15.0		56.0:		 ... 	(49)	See also Begum et al. (2008b)	
+UGC 8508	19	 ... 	 ... 	 ... 	 ... 	29	 ... 	 ... 	31.2	2.3	 ... 	(67) (70)		
+IC 3104	62	 ... 	 ... 	 ... 	 ... 	13	 ... 	 ... 	 ... 	 ... 	 ... 	(45)	H I line widths available in Koribalski et al. (2004)	
+DDO 125	47	 ... 	 ... 	 ... 	 ... 	35	7.3	1.5	11.2	2.7	 ... 	(71) (72)	H I rotational velocity measured at r = 2 arcmin; see also Huchtmeier et al. (2003), Begum et al. (2008b), and Swaters et al. (2009)	
+UGCA 86	16	 ... 	 ... 	 ... 	 ... 	860	8.8	1.0	122.0	5.0	 ... 	(73)	H I structure consists of a rotating disk and a kinematically distinct, elongated "spur"	
+DDO 99	16	 ... 	 ... 	 ... 	 ... 	52	 ... 	 ... 	 ... 	 ... 	 ... 	(67)	H I line widths available in Begum et al. (2008b)	
+IC 4662	190	 ... 	 ... 	 ... 	 ... 	180	 ... 	 ... 	 ... 	 ... 	 ... 	(45)	H I line widths available in Koribalski et al. (2004)	
+DDO 190	51	 ... 	 ... 	 ... 	 ... 	43	10.0	2.4	24.7	2.5	 ... 	(71) (72)	H I rotational velocity measured at r = 1.5 arcmin	
+KKH 86	0.82	 ... 	 ... 	 ... 	 ... 	0.88	 ... 	 ... 	 ... 	 ... 	 ... 	(74)	H I line widths available in Karachentsev et al. (2001a)	
+NGC 4163	37	 ... 	 ... 	 ... 	 ... 	7.9	<7.4		8.7:		 ... 	(75)		
+DDO 113	2.1	 ... 	 ... 	 ... 	 ... 	48^k	 ... 	 ... 	 ... 	 ... 	 ... 	(76)	H I 
