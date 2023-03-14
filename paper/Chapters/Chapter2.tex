@@ -34,9 +34,22 @@ Other parameters that we will use are a galaxy's position in space and its flyby
     \input{fig.stars-mass-size-r50.pgf}
     % TODO: prettify this graph?
     \caption{This shows the size-mass relationship for the FIREbox galaxies. }
+    \label{fig:size-mass}
 \end{figure}
 
-\section{Diffusion Parameter}
+\section{The Diffusion Parameter}
+As diffusion will be main subject of this paper, let us define it. The dwarf galaxies in FIREbox loosely follow a power law size-mass relationship (see figure \ref{fig:size-mass}). The relationship can therefore be described using the following equation.
+
+\begin{equation}
+    R_{50} = R_k
+    \left(
+        \frac{M_*}{M_\odot}
+    \right)
+    ^{\gamma}
+    + E(\beta)
+\end{equation}
+
+Where $R_k$ and $\gamma$ are constants, $M_\odot$ is the mass of the sun, and $E(\beta)$ is a galaxy specific error term.
 
 \section{Host Proximity}
 

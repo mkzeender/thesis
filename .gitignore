@@ -10,6 +10,8 @@ out*.png
 *.log
 *.gz
 *.toc
+*synctex
+*(busy)
 
 .tmp
 .vscode
