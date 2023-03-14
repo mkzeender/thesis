@@ -16,3 +16,4 @@ out*.png
 .mypy_cache
 *.code-workspace
 *.hdf5
+*.pickle
