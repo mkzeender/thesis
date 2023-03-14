@@ -11,4 +11,8 @@ out*.png
 *.gz
 *.toc
 
-**.vscode/*
+.tmp
+.vscode
+.mypy_cache
+*.code-workspace
+*.hdf5
