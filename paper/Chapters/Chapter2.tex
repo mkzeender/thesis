@@ -90,13 +90,14 @@ By taking the logarithm of a power law, we end up with an equation for a line. T
 
 We will call $\beta$ the \textbf{diffusion parameter}, because it tells us how diffuse a galaxy is relative to its fellow galaxies. Positive values of $\beta$ mean that the galaxy has a larger radius than other galaxies of the same mass, and negative values mean a smaller radius. $\beta$ is especially useful for characterizing the diffuseness because the distribution of $\beta$ remains consistent across all masses of dwarf galaxies (see figure \ref{fig:size-mass}). Note that this does not apply for galaxies larger than $10^9 M_\odot$, as they stop following the power law.
 
-We can calculate $\gamma$ and $\ln(a)$ using equation \ref{equ:linear-rel} and fitting the dataset to a line. We can then use those values in equation \ref{equ:beta} to find each galaxy's value of $\beta$. We can also characterize the \textbf{diversity of the diffusion} of galaxies using the the standard deviation $\sigma_\beta$ (the mean is zero by design).
+We can calculate $\gamma$ and $\ln(a)$ using equation \ref{equ:linear-rel} and fitting the dataset to a line. We can then use those values in equation \ref{equ:beta} to find each galaxy's value of $\beta$. We can also characterize the \textbf{diversity of the diffusion} of galaxies using the the standard deviation $\sigma_\beta$ (the mean is zero by design). We will use these values to compare FIREbox with the galaxies of the Local Group.
 
 \section{Proximity}
 %TODO: appendix reference
-To determine what may cause differences in the diffusion of galaxies, one thing that we may look at is its neighbors. Specifically, we will examine a galaxy's distance to its nearest neighbor as well as a satellite galaxy's distance to its host galaxy (as defined by AHF).
+To determine what may cause differences in the diffusion of galaxies, one thing that we may look at is its interactions with its neighbors. Specifically, we will examine a galaxy's distance to its nearest neighbor as well as a satellite galaxy's distance to its host galaxy (as defined by AHF).
 
 Calculating the distance between two galaxies is not as trivial as it may seem because of the shape of FIREbox. The simulation volume is defined as a cube that repeats itself (\cite{feldmannFIREboxSimulatingGalaxies2022}). In other words, if you travel across one border of the universe you appear on the opposite side. This is done to avoid any strange boundary conditions from affecting the simulation, but also without having to simulate an infinite region. In order to measure the X component of the distance between two objects one must first determine whether they are across the X border. If they are, then we find the sum of the distances to the border. Otherwise, we find the difference of their positions like normal. The same logic is used to find the Y and Z components. Only then do we calculate magnitude of the distance.
 
-\section{Tidal Stripping}
+\subsection{Minimum Proximity}
 
+To determine whether tidal interactions affect the diffusion of galaxies, it is better to look at the \emph{minimum} distance between a satellite and its host, as opposed to the current distance. The minimum distance is the point at which the tidal forces are strongest, and therefore could cause the most extreme effects. We must therefore also compare $\beta$ to $d_{min}$. 
