@@ -94,4 +94,9 @@ We can calculate $\gamma$ and $\ln(a)$ using equation \ref{equ:linear-rel} and f
 
 \section{Proximity}
 %TODO: appendix reference
-To determine what may cause differences in the diffusion of galaxies, one thing that we may look at is its neighbors. Specifically, we will examine a galaxy's distance to its nearest neighbor as well as a satellite galaxy's distance to its host galaxy (as defined by AHF). Calculating the distance between two galaxies is not as trivial as it may seem because of the shape of FIREbox. The simulation volume is defined as a cube that repeats itself (\cite{feldmannFIREboxSimulatingGalaxies2022}). In other words, if you travel across one border of the universe you appear on the opposite side. This is done to avoid any strange boundary conditions from affecting the simulation, but also without having to simulate an infinite region. In order to measure a coordinate distance between two objects $\Delta X$ one must first determine whether they are across the X border. 
+To determine what may cause differences in the diffusion of galaxies, one thing that we may look at is its neighbors. Specifically, we will examine a galaxy's distance to its nearest neighbor as well as a satellite galaxy's distance to its host galaxy (as defined by AHF).
+
+Calculating the distance between two galaxies is not as trivial as it may seem because of the shape of FIREbox. The simulation volume is defined as a cube that repeats itself (\cite{feldmannFIREboxSimulatingGalaxies2022}). In other words, if you travel across one border of the universe you appear on the opposite side. This is done to avoid any strange boundary conditions from affecting the simulation, but also without having to simulate an infinite region. In order to measure the X component of the distance between two objects one must first determine whether they are across the X border. If they are, then we find the sum of the distances to the border. Otherwise, we find the difference of their positions like normal. The same logic is used to find the Y and Z components. Only then do we calculate magnitude of the distance.
+
+\section{Tidal Stripping}
+
