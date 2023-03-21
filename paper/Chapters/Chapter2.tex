@@ -34,13 +34,13 @@ Other parameters that we will use are a galaxy's position in space and its flyby
     \input{fig.stars-mass-size-r50.pgf}
     % TODO: prettify this graph?
     \caption{
-        This shows the size-mass relationship for the FIREbox dwarf galaxies. It covers the range $3 \cdot 10^3$ - $10^9$. Galaxies larger than this are no longer dwarfs and do not follow the power law, and galaxies smaller than this approach FIREbox's resolution limit. The line of best fit is described by equation \ref{equ:linear-rel} and $\beta$ represents the deviation from that line. $\beta$ is chosen to characterize the diffusion of a galaxy because the distribution of $\beta$ is essentially independent of mass. 
+        This shows the size-mass relationship for the FIREbox dwarf galaxies. It covers the range $3 \cdot 10^3$ - $10^9$. Galaxies larger than this are no longer dwarfs and do not follow the power law, and galaxies smaller than this approach FIREbox's resolution limit. The line of best fit is described by equation \ref{equ:linear-rel} and $\beta$ represents the deviation from that line. $\beta$ is chosen to characterize the diffuseness of a galaxy because the distribution of $\beta$ is essentially independent of mass. 
     }
     \label{fig:size-mass}
 \end{figure}
 
-\section{The Diffusion Parameter}
-As diffusion will be main subject of this paper, let us define it. The dwarf galaxies in FIREbox loosely follow a power law size-mass relationship (see figure \ref{fig:size-mass}). The relationship can therefore be described using the following equation.
+\section{The Diffuseness Parameter}
+As diffuseness will be main subject of this paper, let us define it. The dwarf galaxies in FIREbox loosely follow a power law size-mass relationship (see figure \ref{fig:size-mass}). The relationship can therefore be described using the following equation.
 
 \begin{equation}
     \frac{R_{50}}{1 kpc} \approx a
@@ -90,13 +90,13 @@ By taking the logarithm of a power law, we end up with an equation for a line. T
     \right)
 \end{equation} \label{equ:beta}
 
-We will call $\beta$ the \textbf{diffusion parameter}, because it tells us how diffuse a galaxy is relative to its fellow galaxies. Positive values of $\beta$ mean that the galaxy has a larger radius than other galaxies of the same mass, and negative values mean a smaller radius. $\beta$ is especially useful for characterizing the diffuseness because the distribution of $\beta$ remains consistent across all masses of dwarf galaxies (see figure \ref{fig:size-mass}). Note that this does not apply for galaxies larger than $10^9 M_\odot$, as they stop following the power law.
+We will call $\beta$ the \textbf{diffuseness parameter}, because it tells us how diffuse a galaxy is relative to its fellow galaxies. Positive values of $\beta$ mean that the galaxy has a larger radius than other galaxies of the same mass, and negative values mean a smaller radius. $\beta$ is especially useful for characterizing the diffuseness because the distribution of $\beta$ remains consistent across all masses of dwarf galaxies (see figure \ref{fig:size-mass}). Note that this does not apply for galaxies larger than $10^9 M_\odot$, as they stop following the power law.
 
-We can calculate $\gamma$ and $\ln(a)$ using equation \ref{equ:linear-rel} and fitting the dataset to a line. We can then use those values in equation \ref{equ:beta} to find each galaxy's value of $\beta$. We can also characterize the \textbf{diversity of the diffusion} of galaxies using the the standard deviation $\sigma_\beta$ (the mean is zero by design). We will use these values to compare FIREbox with the galaxies of the Local Group.
+We can calculate $\gamma$ and $\ln(a)$ using equation \ref{equ:linear-rel} and fitting the dataset to a line. We can then use those values in equation \ref{equ:beta} to find each galaxy's value of $\beta$. We can also characterize the \textbf{diversity of the diffuseness} of galaxies using the the standard deviation $\sigma_\beta$ (the mean is zero by design). We will use these values to compare FIREbox with the galaxies of the Local Group.
 
 \section{Proximity}
 %TODO: appendix reference
-To determine what may cause differences in the diffusion of galaxies, one thing that we may look at is its interactions with its neighbors. Specifically, we will examine a galaxy's distance to its nearest neighbor as well as a satellite galaxy's distance to its host galaxy (as defined by AHF).
+To determine what may cause differences in the diffuseness of galaxies, one thing that we may look at is its interactions with its neighbors. Specifically, we will examine a galaxy's distance to its nearest neighbor as well as a satellite galaxy's distance to its host galaxy (as defined by AHF).
 
 Calculating the distance between two galaxies is not as trivial as it may seem because of the shape of FIREbox. The simulation volume is defined as a cube that repeats itself (\cite{feldmannFIREboxSimulatingGalaxies2022}). In other words, if you travel across one border of the universe you appear on the opposite side. This is done to avoid any strange boundary conditions from affecting the simulation, but also without having to simulate an infinite region. In order to measure the X component of the distance between two objects one must first determine whether they are across the X border. If they are, then we find the sum of the distances to the border. Otherwise, we find the difference of their positions like normal. The same logic is used to find the Y and Z components. Only then do we calculate magnitude of the distance.
 
