@@ -1,0 +1,46 @@
+% TODO: Summary of paper and results
+
+\section{Size-mass-proximity relation}
+
+We discovered that $\beta$ is correlation with the log of a satellite's proximity to its host galaxy. This relationship, as we will demonstrate, implies that we can include this distance as a new term in the formula for the size-mass relationship (equation \ref{equ:linear-rel}). To prove this, we will reverse engineer that equation starting from equation \ref{equ:beta}. We will begin by expressing $\beta$ in terms of $d_{min} / R_{vir}$ using the experimental results found in figure \ref{fig:beta-dmin-fit}.
+
+\begin{equation}
+    \beta = -0.18 \ln\left( \frac{d_{min}}{R_{vir}} \right)
+\end{equation}
+
+Where $-0.18$ is the slope of the line of best fit in this relationship. We can plug this into equation \ref{equ:log-log-with-beta}, giving us
+
+\begin{equation}
+    \ln \left(
+        \frac{R_{50}}{1 kpc}
+    \right)
+    =
+    \ln(a)
+    + \gamma \ln \left(
+        \frac{M_*}{M_\odot}
+    \right)
+    -0.18 \ln\left( \frac{d_{min}}{R_{vir}} \right)
+\end{equation}
+
+We take the exponent to reveal the final power law relationship.
+
+\begin{equation}
+    R_{50} = a
+    \left( \frac{M_*}{M_\odot} \right)^\gamma
+    \left( \frac{d_{min}}{R_{vir}} \right)^{-0.18}
+    \text{kpc}
+\end{equation}
+
+And finally, we may plug in the experimental values of $a$ and $\gamma$ (see figure \ref{fig:size-mass}). This gives us a final equation of 
+
+\begin{equation}
+    R_{50} = 0.41
+    \left( \frac{M_*}{M_\odot} \right)^{0.15}
+    \left( \frac{d_{min}}{R_{vir}} \right)^{-0.18}
+    \text{kpc}
+\end{equation}
+
+As we can see, a satellite's distance to its host has just as much of an influence on its radius as its mass does. 
+
+
+\section{Further Work}
