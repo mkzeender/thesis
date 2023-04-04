@@ -1,6 +1,51 @@
 % Look!  An Appendix!
 
 \chapter{Calculating distances in FIREbox}
+The following code finds the distance to the closest galaxy. Note that for each coordinate, one must check whether the separation is greater than 7500, implying that the distance should be measured across the border.
+
 \begin{lstlisting}[language=Python]
-    ...
+def get_nearest(row):
+    
+    r = np.array([
+        row.Xc_ahf_cat, row.Yc_ahf_cat, row.Zc_ahf_cat
+    ]).reshape((1, 3))
+    
+    r_other: np.ndarray = dat.loc[:, (
+        'Xc_ahf_cat', 'Yc_ahf_cat', 'Zc_ahf_cat'
+    )].to_numpy(dtype='float64')
+    
+    # 2d array: each row contains the x, y, z separation
+    delta_r_vec = r_other - r
+    
+    # whether the coordinate is across the border
+    is_over = delta_r_vec > 7500
+    
+    # if across the border, subtract delta_r from 15000
+    delta_r_wrapped = (15000 - delta_r_vec) * is_over
+    
+    # else, use delta_r as is.
+    delta_r_wrapped += delta_r_vec * ~is_over
+    
+    # find the magnitude
+    delta_r_mag = np.sqrt((delta_r_wrapped**2).sum(axis=1))
+    
+    delta_r_mag += 15000 *(delta_r_mag == 0.0)
+        
+    nearest_galaxy = dat['galaxyID'].to_numpy(dtype=int)[delta_r_mag.argmin()]
+    
+    prox_to_nearest = delta_r_mag.min()
+    
+    return pd.Series(
+        dict(
+            galaxyID=row.galaxyID,
+            nearest_galaxy=nearest_galaxy,
+            d_comoving=prox_to_nearest,
+            
+            rvir_nearest=dat['Rvir_ahf_cat'].to_numpy(
+                    dtype='float64'
+                )[delta_r_mag.argmin()]
+        )
+    )
+
+    
 \end{lstlisting}
