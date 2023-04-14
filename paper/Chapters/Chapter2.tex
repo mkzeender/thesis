@@ -1,13 +1,25 @@
-% Another mock chapter
+\section{FIREbox: a novel cosmological simulation}
+Scale and resolution are important for simulations. Astrophysicists must balance large volume and high detail, both of which cost computing power. The large volume simulations allow us to closely study intergalactic systems and to collect large amounts of statistical information about galaxies \citep{feldmannFIREboxSimulatingGalaxies2022}. However, a higher resolution "zoom in" simulation such as FIRE in the Field \citep{fittsFireFieldSimulating2017} allows us to better simulate the internal physics of the galaxies themselves.
 
-\section{The Data}
+This paper will examine data from FIREbox \citep{feldmannFIREboxSimulatingGalaxies2022}. This cosmological simulation does not have the largest volume, nor is it the most detailed. Rather, it incorporates a balance of high detail and large scale (see figure \ref{fig:feldmann-dynrange}), which together give it the highest dynamical range of any cosmological simulation to this date.
+
+\begin{figure}
+    \includegraphics[width=\textwidth/2]{figs/feldmann/fig2a}
+    \includegraphics[width=\textwidth/2]{figs/feldmann/fig2b}
+    
+    \caption{A comparison the size and detail of cosmological simulations. There is a tradeoff between scale and resolution, where a total increase in both means a higher dynamic range at the cost of computer performance. FIREbox has the highest dynamic range, and therefore the highest computational cost.}
+
+    \label{fig:feldmann-dynrange}
+\end{figure}
+
+\section{The data}
 Over the course of the evolution of the FIREbox simulation, 1201 snapshots of the state of the universe were collected \citep{feldmannFIREboxSimulatingGalaxies2022}. They were approximately evenly spaced out in time and included the positions of the particles, their densities, metalicities, star-formation rates, and other properties. The particle data was reduced by grouping the particles into their respective galaxies and dark matter halos. They used the AMIGA Halo Finder (AHF; \cite{knollmannAhfAMIGAHALO2009}) to sort the halos into categories of halos and sub-halos, which in turn allowed them to categorize the galaxies by host and satellite galaxies respectively. The reduced data, known as the galaxy and halo catalog, includes galaxy information such as position, radius, mass and star formation rate, as well as data about the dark matter halos around those galaxies. For the extent of this experiment, we will be using the snapshot 1201, the final state of the simulation. This snapshot depicts the simulated present day.
 
 Each parameter for the galaxies is split between a few different definitions. For the purpose of this experiment, we will use the following definitions unless otherwise specified. The galaxy's radius $R_{50}$ is defined to be the radius that contains 50\% of its stars, as determined by AHF. The galaxy's mass $M_*$ is defined to be the mass of the stars contained within $R_{50}$. We are not going to include dark matter in this definition. The reader should note that this is not the only way to define these parameters. Due to the fluid nature of matter on a galactic scale, it is often arbitrary as to whether a given particle belongs to a given galaxy. Alternate definitions include different thresholds for the radius, such as $R_{80}$, and different kinds of matter included in the mass, such as gas matter and dark matter.
 
 Other parameters that we will use are a galaxy's position in space and its flyby distance---a satellite galaxy's minimum distance to its host galaxy. All distances (including radius) are measured in terms of the co-moving parameter $h$, a time-dependent scaling factor of the universe. In the final state of FIREbox, $h = 0.6774 kpc$. 
 
-\cite{mcconnachieOBSERVEDPROPERTIESDWARF2012} compiled a number of data sets for dwarf galaxies in the local group of the Milky Way. One data set includes the galaxies' radii and another contains their mass. The radius is defined slightly differently in this case. It is the half-light radius, the radius from which half of the galaxy's light is emitted. The mass parameter is calculated by assuming a mass-light ratio of one, meaning that the brightness per unit mass is equal to the Sun. For the sake of this experiment, we will assume that the half-light radius is equal to $R_{50}$ the presumed $M_*$ is equal to $M_*$. To get this data in a usable form, I first dumped the text-based datasets into pandas spreadsheets. I removed invalid rows and then merged them by galaxy name. For galaxies whose names were reported differently on the different sheets, I merged them by hand. I then cast the mass and radius to float64 for use in the analysis.
+\cite{mcconnachieOBSERVEDPROPERTIESDWARF2012} compiled a number of data sets for low-mass galaxies in the local group of the Milky Way. One data set includes the galaxies' radii and another contains their mass. The radius is defined slightly differently in this case. It is the half-light radius, the radius from which half of the galaxy's light is emitted. The mass parameter is calculated by assuming a mass-light ratio of one, meaning that the brightness per unit mass is equal to the Sun. For the sake of this experiment, we will assume that the half-light radius is equal to $R_{50}$ the presumed $M_*$ is equal to $M_*$. To get this data in a usable form, I first dumped the text-based datasets into pandas spreadsheets. I removed invalid rows and then merged them by galaxy name. For galaxies whose names were reported differently on the different sheets, I merged them by hand. I then cast the mass and radius to float64 for use in the analysis.
 
 
 
@@ -30,15 +42,14 @@ Other parameters that we will use are a galaxy's position in space and its flyby
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth*11/10]{figs/me/stars-mass-size-r50.pdf}
-    % TODO: prettify this graph?
     \caption{
-        The left shows the size-mass relationship for the FIREbox dwarf galaxies. It covers the range $3 \cdot 10^3$ - $10^9$. Galaxies larger than this are no longer dwarfs and do not follow the power law, and galaxies smaller than this approach FIREbox's resolution limit. The line of best fit is described by equation \ref{equ:linear-rel} and $\beta$ represents the deviation from that line. $\beta$ is chosen to characterize the diffuseness of a galaxy because the distribution of $\beta$ is essentially independent of mass, which can be seen in on the right.
+        The left shows the size-mass relationship for the FIREbox low-mass galaxies. It covers the range $3 \cdot 10^3$ - $10^9$. Galaxies larger than this are no longer dwarfs and do not follow the power law, and galaxies smaller than this approach FIREbox's resolution limit. The line of best fit is described by equation \ref{equ:linear-rel} and $\beta$ represents the deviation from that line. $\beta$ is chosen to characterize the diffuseness of a galaxy because the distribution of $\beta$ is essentially independent of mass, which can be seen in on the right.
     }
     \label{fig:size-mass}
 \end{figure}
 
 \section{The Diffuseness Parameter}
-As diffuseness will be main subject of this paper, let us define it. The dwarf galaxies in FIREbox loosely follow a power law size-mass relationship (see figure \ref{fig:size-mass}). The relationship can therefore be described using the following equation.
+As diffuseness will be main subject of this paper, let us define it. The low-mass galaxies in FIREbox loosely follow a power law size-mass relationship (see figure \ref{fig:size-mass}). The relationship can therefore be described using the following equation.
 
 \begin{equation}
     \frac{R_{50}}{1 kpc} \approx a
@@ -88,15 +99,16 @@ By taking the logarithm of a power law, we end up with an equation for a line. T
     \right)
 \end{equation} \label{equ:beta}
 
-We will call $\beta$ the \textbf{diffuseness parameter}, because it tells us how diffuse a galaxy is relative to its fellow galaxies. Positive values of $\beta$ mean that the galaxy has a larger radius than other galaxies of the same mass, and negative values mean a smaller radius. $\beta$ is especially useful for characterizing the diffuseness because the distribution of $\beta$ remains consistent across all masses of dwarf galaxies (see figure \ref{fig:size-mass}). Note that this does not apply for galaxies larger than $10^9 M_\odot$, as they stop following the power law.
+We will call $\beta$ the \textbf{diffuseness parameter}, because it tells us how diffuse a galaxy is relative to its fellow galaxies. Positive values of $\beta$ mean that the galaxy has a larger radius than other galaxies of the same mass, and negative values mean a smaller radius. $\beta$ is especially useful for characterizing the diffuseness because the distribution of $\beta$ remains consistent across all masses of low-mass galaxies (see figure \ref{fig:size-mass}). Note that this does not apply for galaxies larger than $10^9 M_\odot$, as they stop following the power law.
 
 We can calculate $\gamma$ and $\ln(a)$ using equation \ref{equ:linear-rel} and fitting the dataset to a line. We can then use those values in equation \ref{equ:beta} to find each galaxy's value of $\beta$. We can also characterize the \textbf{diversity of the diffuseness} of galaxies using the the standard deviation $\sigma_\beta$ (the mean is zero by design). We will use these values to compare FIREbox with the galaxies of the Local Group.
 
 \section{Proximity}
 %TODO: appendix reference
-To determine what may cause differences in the diffuseness of galaxies, one thing that we may look at is its interactions with its neighbors. Specifically, we will examine a galaxy's distance to its nearest neighbor as well as a satellite galaxy's distance to its host galaxy (as defined by AHF).
+To determine what may cause differences in the diffuseness of galaxies, one thing that we may look at is its interactions with its neighbors. Specifically, we will examine a galaxy's distance to its nearest neighbor as well as a satellite galaxy's distance to its host galaxy (as defined by AHF). For the distance to the host galaxy, I examined both the absolute separation and virial separation. I define the absolute separation to be the distance in kpc to the host galaxy, and the virial separation to be that distance as a fraction of the host galaxy's virial radius. The virial radius of a galaxy is the radius within which particles will tend to be gravitationally bound. In other words, it is the effective radius of a galaxy's gravitational well.
 
-Calculating the distance between two galaxies is not as trivial as it may seem because of the shape of FIREbox. The simulation volume is defined as a cube that repeats itself \citep{feldmannFIREboxSimulatingGalaxies2022}. In other words, if you travel across one border of the universe you appear on the opposite side. This is done to avoid any strange boundary conditions from affecting the simulation, but also without having to simulate an infinite region. In order to measure the X component of the distance between two objects one must first determine whether they are across the X border. If they are, then we find the sum of the distances to the border. Otherwise, we find the difference of their positions like normal. The same logic is used to find the Y and Z components. Only then do we calculate magnitude of the distance.
+Calculating the distance between two galaxies is not as trivial as it may seem because of the shape of FIREbox. The simulation volume is defined as a cube that repeats itself \citep{feldmannFIREboxSimulatingGalaxies2022}. In other words, if you travel across one border of the universe you appear on the opposite side. This is done to avoid any strange boundary conditions from affecting the simulation, but also without having to simulate an infinite region. In order to measure the X component of the distance between two objects one must first determine whether they are across the X border. If they are, then we find the sum of the distances to the border. Otherwise, we find the difference of their positions like normal. The same logic is used to find the Y and Z components. Only then do we calculate magnitude of the distance. Refer to Appendix \ref{apx:distances} for code to do this calculation.
+
 
 \subsection{Minimum Proximity}
 
