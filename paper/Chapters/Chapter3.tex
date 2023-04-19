@@ -1,23 +1,23 @@
 \section{Diversity of low-mass galaxy diffuseness}
 
 % TODO: graph for these results!!!
-There are only so many conclusions we can draw about the diversity of low-mass galaxy sizes with the given data. The data from \cite{mcconnachieOBSERVEDPROPERTIESDWARF2012} spans the range of $10^2$ to $10^9$ solar masses, with many of the galaxies observed being smaller than $3 \cdot 10^6$. The FIREbox data, however, only covers galaxies greater than $3 \cdot 10^6$. For this reason and others, the lines of best fit defined by $\ln(a)$ and $\gamma$ (see equation \ref{equ:linear-rel}) for each dataset do not perfectly line up. %TODO: \ref{fig}
-The diffuseness parameter $\beta$ is defined relative to the line of best fit for a dataset. It is therefore important to note that the $\beta$ for individual galaxies across datasets have no meaningful comparison. However, we may still compare the overall diversity of the diffuseness. For FIREbox we have $\sigma_\beta = 0.28$, and for \cite{mcconnachieOBSERVEDPROPERTIESDWARF2012} we have a diversity of $\sigma_\beta = 0.66$, over twice as large. The simulated galaxies in FIREbox therefore follow a much stricter size-mass relationship than is expected from real-world observation.
+There are only so many conclusions I can draw about the diversity of low-mass galaxy sizes with the given data. The data from \cite{mcconnachieOBSERVEDPROPERTIESDWARF2012} spans the range of $10^2$ to $10^9$ solar masses, with many of the galaxies observed being smaller than $3 \times 10^6 M_\odot$. The FIREbox data, however, only covers galaxies greater than $3 \times 10^6 M_\odot$. For this reason, the lines of best fit defined by $\ln(a)$ and $\gamma$ (see equation \ref{equ:linear-rel}) for each dataset do not perfectly line up. %TODO: \ref{fig}
+The diffuseness parameter $\beta$ is defined relative to the line of best fit for a dataset. It is therefore important to note that the $\beta$ values across datasets have no meaningful comparison when $\ln(a)$ and $\gamma$ are different. However, I can still compare the overall diversity of the diffuseness. For FIREbox, I found the diversity to be $\sigma_\beta = 0.28$, and for \cite{mcconnachieOBSERVEDPROPERTIESDWARF2012} I found $\sigma_\beta = 0.66$, over twice as large. The simulated galaxies in FIREbox therefore follow a stricter size-mass relationship than is expected from real-world observation.
 
-This discrepancy is an example of the diversity of low-mass galaxy sizes tension, and \cite{salesBaryonicSolutionsChallenges2022} has already shown that it applies to many higher resolution simulations. FIREbox has a larger volume and contains more galaxies than those simulations, and is the first of its size to be detailed enough to resolve low-mass galaxies. It is therefore an important finding that the tension is not resolved in FIREbox, because that is evidence that the tension is \emph{not} caused by a constraint in simulation volume.
+This discrepancy is an example of the diversity of low-mass galaxy sizes tension, and \cite{salesBaryonicSolutionsChallenges2022} shows that it applies to many higher resolution "zoom-in" simulations. FIREbox has a larger volume and contains more galaxies than those simulations, and is the first of its size to be detailed enough to resolve low-mass galaxies. It is therefore an important finding that the tension is not resolved in FIREbox, because that is evidence that the tension is \emph{not} caused by a constraint in simulation volume.
 
 
 \section{Proximity to host galaxy}
-% TODO: define "Virial separation" in methods.
-We find that there is a small correlation between (the logarithm of) a satellite's distance to its host galaxy and its diffuseness (see figure \ref{fig:beta-d}). This correlation is approximately the same regardless of whether we measure the absolute separation or Virial separation: $r = .22$, $p \leq .001$ for the former and $r = .26$, $p \leq .001$ for the latter. As we can see in the figures, the data is essentially untouched except for the galaxies of low dark matter with $d / R_{vir} < 0.2$. Below this threshold, as \cite{morenoGalaxiesLackingDark2022} establishes, a satellite galaxy experiences a level of tidal disruption that either disassembles it entirely forms a dark matter deficient galaxy. However, above this threshold there appears to not be much of an effect. In fact, if we exclude galaxies below this critical threshold from our analysis, we find that there is absolutely no correlation: $r = .06$, $p = .23$ for absolute distance and $r = -.03$, $p = .51$ for Virial separation. We may therefore conclude that a variance in proximity to a host galaxy is not responsible for the diversity of diffuseness in galaxies.
+
+I found that there is a small correlation between (the logarithm of) a satellite's distance to its host galaxy and its diffuseness (see Figure \ref{fig:beta-d}). This correlation is approximately equal for both the absolute separation and virial separation: $r = .22$, $p \leq .001$ for the former and $r = .26$, $p \leq .001$ for the latter. As one can see in the figures, the data is essentially untouched except for the galaxies of low dark matter with $d / R_{\rm{vir}} < 0.2$. Below this threshold, as \cite{morenoGalaxiesLackingDark2022} establishes, a satellite galaxy is either disassembled entirely or, more rarely, converted into a dark matter deficient galaxy. However, above this threshold there appears to not be much of an effect. In fact, when I excluded galaxies below this critical threshold from the analysis, I found that there is absolutely no correlation: $r = .06$, $p = .23$ for absolute distance and $r = -.03$, $p = .51$ for virial separation. I therefore conclude that a variance in proximity to a host galaxy is not responsible for the diversity of diffuseness in galaxies.
 
 \begin{figure}
     \centering
     \includegraphics*[width=\textwidth*11/10]{figs/me/beta-d.pdf}
     % TODO: units for d
-    % TODO: foreshadow Virial radius in the methods
+    % TODO: foreshadow virial radius in the methods
     \caption{
-        Shows the diffuseness of satellites as a function of distance to their host galaxies. On the left, it compares the absolute separation. On the right, it shows the Virial separation (distance as a fraction of the host galaxy's Virial radius). The correlation for these is small: $r = .22$, $p \leq .001$ for $d$ and $r = .26$, $p \leq .001$ for $d / R_{vir}$. This slight positive correlation in both sets of parameters is likely caused by the dark matter deficient galaxies (shown in light green and yellow), whose outer regions are likely tidally disrupted, leaving only a core.
+        Shows the diffuseness of satellites as a function of distance to their host galaxies. On the left, it compares the absolute separation. On the right, it shows the virial separation (distance as a fraction of the host galaxy's virial radius). The correlation for these is small: $r = .22$, $p \leq .001$ for $d$ and $r = .26$, $p \leq .001$ for $d / R_{\rm{vir}}$. This slight positive correlation in both sets of parameters is likely caused by the dark matter deficient galaxies (shown in light green and yellow), whose outer regions are likely tidally disrupted, leaving only a core.
     }
     \label{fig:beta-d}
 \end{figure}
@@ -25,21 +25,21 @@ We find that there is a small correlation between (the logarithm of) a satellite
 
 \section{Minimum proximity}
 
-When we plot the diffuseness of a satellite against the minimum separation between it and its host, we find an uneven distribution (see figure \ref{fig:beta-dmin}). A majority of galaxies are clustered towards the right, and only a few outliers are towards the bottom left. However, we notice that these outliers are the dark matter deficient galaxies. Including the outliers gives us no correlation for these parameters: $r = .04$, $p=.51$ for $d$ and $r = -0.07$, $p = .25$ for $d_{min} / R_{vir}$.
+When I plotted the diffuseness of a satellite against the minimum separation between it and its host, I found an uneven distribution (see Figure \ref{fig:beta-dmin}). A majority of galaxies are clustered towards the right, and only a few outliers are towards the bottom left. Notice, however, that these outliers are the very same dark matter deficient galaxies. Including the outliers yields no correlation for these parameters: $r = .04$, $p=.51$ for $d$ and $r = -0.07$, $p = .25$ for $d_{\rm{min}} / R_{\rm{vir}}$.
 \begin{figure}
     \centering
     \includegraphics*[width=\textwidth*11/10]{figs/me/beta-dmin.pdf}
-    \caption{Shows the diffuseness of satellites as a function of minimum distance to their host galaxies. On the left, it compares the absolute separation. On the right, it shows the Virial separation. There is no correlation for these parameters: $r = .04$, $p=.51$ for $d_{min}$ and $r = -0.07$, $p = .25$ for $d_{min} / R_{vir}$.}
+    \caption{Shows the diffuseness of satellites as a function of minimum distance to their host galaxies. On the left, it compares the absolute separation. On the right, it shows the virial separation. There is no correlation for these parameters: $r = .04$, $p=.51$ for $d_{\rm{min}}$ and $r = -0.07$, $p = .25$ for $d_{\rm{min}} / R_{\rm{vir}}$.}
     \label{fig:beta-dmin}
 \end{figure}
 
-However when we exclude galaxies with $d_{min} \leq 0.2 R_{vir}$, we get a much different picture. While there is no correlation for the absolute distances ($r = -0.03$, $p = .62$) there is a medium negative correlation between $\beta$ and $d_{min}/R_{vir}$: $r=-0.32$, $p \leq .001$.
+However when I excluded galaxies with $d_{\rm{min}} \leq 0.2 R_{\rm{vir}}$, it was a completely different story. While there is no correlation for the absolute distances ($r = -0.03$, $p = .62$) there is a medium negative correlation between $\beta$ and $d_{\rm{min}}/R_{\rm{vir}}$: $r=-0.32$, $p \leq .001$. This relationship can be seen more clearly in Figure \ref{fig:beta-dmin-fit}.
 
 \begin{figure}
     \centering
     \includegraphics*[width=\textwidth*2/3]{figs/me/beta-dmin-fit.pdf}
     % TODO: what about the slope of the line?
-    \caption{A zoom-in of figure \ref{fig:beta-dmin} showing the diffuseness of satellite galaxies as a function of their minimum Virial separation. This graph only includes galaxies above the critical separation of $0.2 R_{vir}$, below which a galaxy would either be entirely destroyed or converted into a dark matter deficient galaxy. There is a medium negative correlation between these parameters: $r=-0.32$, $p \leq .001$}
+    \caption{A zoom-in of Figure \ref{fig:beta-dmin} showing the diffuseness of satellite galaxies as a function of their minimum virial separation. This graph only includes galaxies above the critical separation of $0.2 R_{\rm{vir}}$, below which a galaxy would either be entirely destroyed or converted into a dark matter deficient galaxy. There is a medium negative correlation between these parameters: $r=-0.32$, $p \leq .001$.}
     \label{fig:beta-dmin-fit}
 \end{figure}
 
@@ -53,4 +53,4 @@ However when we exclude galaxies with $d_{min} \leq 0.2 R_{vir}$, we get a much 
 
 \end{figure}
 
-Plotting the proximity of a galaxy to its nearest neighbor gives a similar graph, with a slightly smaller correlation: $r = .26$, $p \leq .001$. There is again a slight negative trend, with the primary outliers being dark matter diffuse galaxies. 
+Plotting the proximity of a galaxy to its nearest neighbor gives a much more scattered graph, with a small correlation: $r = .26$, $p \leq .001$. There is a slight negative trend, with the primary outliers being dark matter diffuse galaxies. There is noticeable drop in density of points below $\beta = -0.4$, making the data less normally distributed. It is unclear what causes this, but it is worth noting that non-normal distributions can cause false positives in Pearson correlation tests.
