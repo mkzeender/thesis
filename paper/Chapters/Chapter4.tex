@@ -2,14 +2,14 @@
 
 \section{Size-mass-proximity relation}
 
-I discovered that $\beta$ is correlated with the log of a satellite's proximity to its host galaxy. This relationship, as I will demonstrate, implies that I can include this distance as a new term in the formula for the size-mass relationship (equation \ref{equ:linear-rel}). To prove this, I will reverse engineer that equation starting from equation \ref{equ:beta}. I will begin by expressing $\beta$ in terms of $d_{\rm{min}} / R_{\rm{vir}}$ using the experimental results found in Figure \ref{fig:beta-dmin-fit},
+I discovered that $\beta$ is correlated with the log of a satellite's proximity to its host galaxy. This relationship, as I will demonstrate, implies that I can include this distance as a new term in the formula for the size-mass relationship (equation \ref{equ:linear-rel}). To prove this, I will reverse engineer that equation starting from equation (\ref{equ:beta}). I will begin by expressing $\beta$ in terms of $d_{\rm{min}} / R_{\rm{vir}}$ using the experimental results found in Figure \ref{fig:beta-dmin-fit},
 \begin{equation}
     \beta = -0.18 \ln\left( \frac{d_{\rm{min}}}{R_{\rm{vir}}} \right)
 \end{equation}
-where $-0.18$ is the slope of the line of best fit in this relationship. I can plug this into equation \ref{equ:log-log-with-beta}, yielding
+where $-0.18$ is the slope of the line of best fit in this relationship. I can plug this into equation (\ref{equ:log-log-with-beta}), yielding
 \begin{equation}
     \ln \left(
-        \frac{R_{50}}{1 \rm{ kpc}}
+        \frac{R_{50}}{1 \rm{\,kpc}}
     \right)
     =
     \ln(a)
@@ -34,7 +34,7 @@ And finally, I plug in the experimental values of $a$ and $\gamma$ (see Figure \
     \text{kpc}
 \end{equation}
 
-As you can see, a satellite's distance to its host has just as much of an influence on its radius as its mass does. 
+As you can see, a satellite's distance to its host has just as much of an influence on radius as mass does. 
 % TODO: redo ln(a) and gamma calculation for only this subset of galaxies, this will give a better plot!
 
 
@@ -42,12 +42,12 @@ As you can see, a satellite's distance to its host has just as much of an influe
 
 \section{Further Work}
 
-If you compare Figure \ref{fig:beta-d} and \ref{fig:beta-dmin}, you will notice a number of blue-ish datapoints that exist in only the former. These are satellite galaxies that have not reached their perihelion. Their blue color-coding indicates that they have lower amounts of dark matter ($M_\star / M_{\rm{tot}} \approx 0.6$). Additionally, they fall noticeably lower on the plot than their purple neighbors, indicating that they tend to be more compact. These galaxies likely hold an important piece of the puzzle to finding the causes of variance in diffuseness, as well as their dark matter content. Further work should focus on these galaxies, including an exploration into their apparent dark matter deficiency.
+If you compare Figures \ref{fig:beta-d} and \ref{fig:beta-dmin}, you will notice a number of blue-ish data points that exist in only the former. These are satellite galaxies that have not reached their perihelion. Their blue color-coding indicates that they have lower amounts of dark matter ($M_\star / M_{\rm{tot}} \approx 0.6$). Additionally, they fall noticeably lower on the plot than their purple neighbors, indicating that they tend to be more compact. These galaxies likely hold an important piece of the puzzle to finding the causes of variance in fluffiness, as well as their dark matter content. Further work should focus on these galaxies, including an exploration into their decreased dark matter.
 
-This thesis covers correlations in the FIREbox data. However, it is clear from our calculation of $\sigma_\beta$ for the Local Group that the real world holds a much greater range of diffuseness values than even FIREbox. There could be many explanations for this. Firstly, there could be some mechanism causing the tidal effects to be even more pronounced than the simulations suggest. Secondly, the higher diffuseness diversity could be caused by a higher diversity in distances between galaxies. Thirdly, there could be other variables contributing to the diffuseness. And finally, the tension could still be evidence that \lcdm\* is wrong. Further work should pursue these topics.
+This thesis covers correlations in the FIREbox data. However, it is clear from our calculation of $\sigma_\beta$ for the Local Group that the real world holds a much greater range of fluffiness values than even FIREbox. There could be many explanations for this. Firstly, there could be some mechanism causing the tidal effects to be even more pronounced than the simulations suggest. Secondly, the higher fluffiness diversity could be caused by a higher diversity in distances between galaxies. Thirdly, there could be other variables contributing to the fluffiness. And finally, the tension could still be evidence that \lcdm\* is wrong. Further work should pursue these topics.
 
-My results show results for proximity to a galaxy's nearest neighbor. However, given that many satellite galaxies orbit their nearest neighbor, $d$ is not orthogonal to $d_{neighbor}$. Future research should control for this to determine whether the tidal effects in a host-satellite relationship are different from those of arbitrary interactions between neighboring galaxies.
+My results are inconclusive for the proximity to a galaxy's nearest neighbor. Given that many satellite galaxies orbit their nearest neighbor, $d$ is not orthogonal to $d_{\rm{neighbor}}$. Future research should control for this to determine whether the tidal effects in a host-satellite relationship are different from those of arbitrary interactions between neighboring galaxies.
 
 \section{Closing Remarks}
 
-I showed that tidal interactions play a role in creating diffuse galaxies. Be it a satellite that is orbiting close to its host galaxy or simply a stray galaxy passing another, its size can be forever changed by this interaction. There are likely many undiscovered methods by which a galaxy's diffuseness can evolve over time, some of which may not be present in FIREbox. However, the confirmation of tidal disruption as a factor brings us one step closer to understanding low-mass galaxies and the physical models we employ to simulate them.
+I showed that tidal interactions play a role in creating fluffy galaxies. Be it a satellite that is orbiting close to its host galaxy or simply a stray galaxy passing another, its size can be forever changed by this interaction. There are likely many undiscovered methods by which a galaxy's fluffiness can evolve over time, some of which may not be present in FIREbox. However, the confirmation of tidal disruption as a factor brings us one step closer to understanding low-mass galaxies and the physical models we employ to simulate them.
